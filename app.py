@@ -4,7 +4,7 @@ from PIL import Image
 from torchvision.transforms import transforms
 from network import CNN
 from infer import predict_text
-# Define a title for your Streamlit app
+# Define a title for the Streamlit app
 st.title('Image Text Recognition')
 
 # Create a file uploader widget
