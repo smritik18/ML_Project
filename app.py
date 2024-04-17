@@ -27,7 +27,17 @@ if uploaded_file is not None:
 
         # Display the predicted text
         st.write('Predicted Text:', recognized_text)
+        
+    # Input box for users to enter their correction
+    correction = st.text_input("Enter any prediction correction:")
 
+    # Submit button
+    if st.button('Submit'):
+        if correction:  # Check if the correction is not empty
+            st.success("Your correction was submitted successfully!")
+            st.write("You submitted: ", correction)
+        else:
+            st.error("Please enter a correction before submitting.")
 
 
 
